@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://www.tristangassmann.com/en/categories/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.tristangassmann.com/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.tristangassmann.com/en/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.tristangassmann.com/en/404.html</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.tristangassmann.com/404.html"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.tristangassmann.com/en/404.html"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.tristangassmann.com/en/tags/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.tristangassmann.com/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.tristangassmann.com/en/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://www.tristangassmann.com/en/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="fr"
+                href="https://www.tristangassmann.com/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://www.tristangassmann.com/en/"
+                />
+  </url>
+  
+</urlset>

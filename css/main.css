@@ -1,0 +1,411 @@
+/* Reset
+----------------------------------------------------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+ins {
+  text-decoration: none;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+em {
+  font-style: italic;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+[role="button"] {
+  cursor: pointer;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+a {
+  background-color: transparent;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button, input, optgroup, select, textarea {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+
+input {
+  line-height: normal;
+}
+
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type="search"] {
+  box-sizing: content-box;
+}
+
+textarea {
+  overflow: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Default
+----------------------------------------------------------------*/
+
+body {
+  background: #181818 url(../images/bg.png) repeat;
+  font-family: 'Founders Grotesk', Helvetica, arial, sans serif;
+  color: #ccc;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+
+@media (max-width: 767px) {
+    h1 {
+      font-size: 32px;
+      margin-bottom: 12px;
+    }
+}
+
+h2 {
+  color: #666;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+@media (max-width: 767px) {
+    h2 {
+      font-size: 24px;
+    }
+}
+
+a {
+  color: #919aab;
+  text-decoration: none;
+  transition: color 0.1s;
+}
+
+a:hover {
+  color: #00a8e0;
+}
+
+hr {
+  background-color: #ccc;
+  width: 56px;
+  height: 5px;
+  border: 0;
+  margin: 144px 0 48px 0;
+}
+
+@media (max-width: 767px) {
+    hr {
+      width: 48px;
+      margin: 59px 0 23px 0;
+    }
+}
+
+p {
+  font-size: 64px;
+  font-weight: 500;
+}
+
+@media (max-width: 767px) {
+    p {
+      font-size: 56px;
+    }
+}
+
+/* Header
+----------------------------------------------------------------*/
+
+.header {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+    .header {
+      top: -16px;
+    }
+}
+
+.header-nav {
+  width: 100%;
+  padding: 0 16px;
+  margin: 32px auto;
+  display: flex;
+}
+
+@media (min-width: 768px) {
+     .header-nav {
+      width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+     .header-nav {
+      width: 960px;
+    }
+}
+
+.header-nav_lang-switch {
+  margin-left: auto;  
+  position: relative;
+  overflow: hidden;
+  line-height: 36px;
+  width: 80px;
+  height: 36px;
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 20px;
+}
+
+.header-nav_lang-switch_item {
+  color: #666;
+  position: relative;
+  display: block;
+  float: left;
+  width: 50%;
+  text-align: center;
+  margin-top: 2px;
+}
+
+.header-nav_lang-switch_item:hover {
+  color: #ccc;
+}
+
+.header-nav_lang-switch_item.active {
+  color: #999;
+}
+
+.header-nav_lang-switch_item.active:before {
+  content: "";
+  background-color: #000;
+  position: absolute;
+  top: -2px;
+  left: 0;
+  z-index: -1;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+/* Main
+----------------------------------------------------------------*/
+
+.main {
+  padding: 0 16px;
+  margin: 149px auto 0 auto;
+}
+
+@media (min-width: 768px) {
+    .main {
+      width: 760px;
+    }
+}
+
+@media (max-width: 767px) {
+    .main {
+      margin: 80px auto 0 auto;
+    }
+}
+
+/* Animation
+----------------------------------------------------------------*/
+
+h1, h2 {
+  animation-delay: 0.2s;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+hr, p {
+  animation-delay: 0.5s;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+h1, h2, hr, p {
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 16px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.header-nav {
+  animation-delay: 0.8s;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-name: fadeInDown;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -16px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* 404
+----------------------------------------------------------------*/
+
+#error-404 .main {
+  text-align: center;
+  max-width: 480px;
+}
+
+#error-404 h1 {
+  font-size: 144px;
+  margin-bottom: 54px;
+  padding-top: 4px;
+}
+
+@media (max-width: 767px) {
+    #error-404 h1 {
+      font-size: 104px;
+      margin-bottom: 45px;
+      padding-top: 2px;
+    }
+}
+
+#error-404 h2 {
+  font-size: 32px;
+  line-height: 1.3em;
+}
+
+@media (max-width: 767px) {
+    #error-404 h2 {
+      line-height: 1.2em;
+    }
+}
+
+#error-404 p {
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 36px;
+  line-height: 1.3em;
+}
+
+@media (max-width: 767px) {
+    #error-404 p {
+      margin-top: 29px;
+    }
+}
+
+/* Fonts
+----------------------------------------------------------------*/
+
+@font-face {
+    font-family: 'Founders Grotesk';
+    font-weight: 400;
+    font-style: normal;
+    src: url('../fonts/FoundersGrotesk-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Founders Grotesk';
+    font-weight: 500;
+    font-style: normal;
+    src: url('../fonts/FoundersGrotesk-Medium.woff') format('woff');
+}
